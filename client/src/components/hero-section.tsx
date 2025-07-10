@@ -36,11 +36,11 @@ export function HeroSection() {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-            Hi, I'm <span className="gradient-text">Abu Bakar</span>
+            Hi, I'm <span className="gradient-text">AbuBakar</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-            Python Developer & AI Enthusiast
+            Python Developer 
           </p>
           
           <p className="text-lg text-gray-500 dark:text-gray-400 max-w-3xl mx-auto mb-8">
@@ -65,7 +65,7 @@ export function HeroSection() {
           
           <div className="flex justify-center space-x-6 mt-8">
             <a
-              href="https://github.com/abubakarazeem"
+              href="https://github.com/bakar301"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-200"
@@ -73,7 +73,7 @@ export function HeroSection() {
               <Github size={28} />
             </a>
             <a
-              href="https://linkedin.com/in/abubakarazeem"
+              href="https://www.linkedin.com/in/abubakar-azeem-821625226/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-200"

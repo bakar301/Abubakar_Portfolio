@@ -2,23 +2,23 @@ import { Code, Layers, Bolt } from "lucide-react";
 
 export function SkillsSection() {
   const programmingLanguages = [
-    { name: "Python", percentage: 90 },
-    { name: "Dart", percentage: 85 },
-    { name: "JavaScript", percentage: 75 },
-    { name: "C++", percentage: 70 },
+    { name: "Python", percentage: 60 },
+    { name: "Dart", percentage: 70 },
+    { name: "JavaScript", percentage: 65 },
+    { name: "C++", percentage: 65 },
   ];
 
   const frameworks = [
-    { name: "FastAPI", percentage: 90 },
+    { name: "FastAPI", percentage: 60 },
     { name: "Flutter", percentage: 85 },
-    { name: "Langchain", percentage: 80 },
-    { name: "React Native", percentage: 75 },
+    { name: "Langchain", percentage: 60 },
+    { name: "React Native", percentage: 70 },
   ];
 
   const technologies = [
     "RESTful APIs",
     "Git/GitHub",
-    "AI/ML",
+    "AI",
     "Mobile UI/UX",
     "Database Design",
     "Cross-platform",

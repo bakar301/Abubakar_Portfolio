@@ -8,7 +8,7 @@ export function ProjectsSection() {
       image: "/projects/objectiq.jpg",
       fallbackImage: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       imageAlt: "ObjectIQ - AI food recognition app screenshot",
-      technologies: ["Python", "FastAPI", "Flutter", "AI/ML"],
+      technologies: ["Python", "FastAPI", "Flutter", "AI"],
       featured: true,
       githubUrl: "https://github.com/abubakarazeem/objectiq",
       liveUrl: null,

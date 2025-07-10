@@ -28,7 +28,7 @@ export function AboutSection() {
               As a Computer Science graduate, I've developed a strong foundation in software development with a particular focus on Python and backend technologies. My journey began with core programming concepts and has evolved into specializing in building scalable applications using modern frameworks.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              I'm particularly passionate about AI integration and mobile app development, combining these interests in projects like ObjectIQ, where I implemented AI-powered food recognition using Python backends and Flutter frontends.
+              I'm particularly passionate about python and mobile app development, combining these interests in projects like ObjectIQ, where I implemented AI-powered food recognition using Python backends and Flutter frontends.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
@@ -46,7 +46,6 @@ export function AboutSection() {
               <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">Problem Solver</span>
               <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">Team Player</span>
               <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm font-medium">Fast Learner</span>
-              <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm font-medium">AI Enthusiast</span>
             </div>
           </div>
         </div>

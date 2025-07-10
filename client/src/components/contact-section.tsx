@@ -44,7 +44,7 @@ export function ContactSection() {
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">Connect With Me</h3>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://github.com/abubakarazeem"
+                href="https://github.com/bakar301"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-200"
@@ -52,7 +52,7 @@ export function ContactSection() {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com/in/abubakarazeem"
+                href="https://www.linkedin.com/in/abubakar-azeem-821625226/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-200"

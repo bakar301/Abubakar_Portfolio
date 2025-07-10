@@ -27,7 +27,7 @@ export function EducationSection() {
               <p className="text-lg font-semibold text-gray-900 dark:text-white">University of South Asia, Lahore</p>
               <p className="text-gray-600 dark:text-gray-300">2021 - 2025</p>
               <p className="text-gray-600 dark:text-gray-300 mt-4">
-                Comprehensive study of computer science fundamentals including programming, algorithms, data structures, software engineering, and artificial intelligence.
+                Comprehensive study of computer science fundamentals including programming, software engineering, and artificial intelligence.
               </p>
             </div>
           </div>
