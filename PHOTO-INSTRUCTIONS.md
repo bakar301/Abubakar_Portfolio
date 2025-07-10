@@ -21,12 +21,31 @@ To add your personal photo to the portfolio:
      - About section (larger portrait)
    - If no photo is found, it uses a professional placeholder
 
+## Project Images
+To add screenshots of your projects:
+
+1. **ObjectIQ Project:**
+   - Add image to: `client/public/projects/objectiq.jpg`
+   - Should show your ObjectIQ application interface
+
+2. **Pomodoro Timer Project:**
+   - Add image to: `client/public/projects/pomodoro-timer.jpg`
+   - Should show your Pomodoro Timer application interface
+
+3. **Image Requirements:**
+   - Recommended size: 800x400 pixels
+   - Format: JPG or PNG
+   - Clear screenshots of your applications
+
 ## File Structure
 ```
 abu-bakar-portfolio/
 ├── client/
 │   ├── public/
-│   │   └── abu-bakar-photo.jpg  ← Put your photo here
+│   │   ├── abu-bakar-photo.jpg  ← Put your photo here
+│   │   └── projects/
+│   │       ├── objectiq.jpg  ← ObjectIQ screenshot
+│   │       └── pomodoro-timer.jpg  ← Pomodoro Timer screenshot
 │   └── src/
 └── ...
 ```
