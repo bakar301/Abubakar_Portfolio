@@ -15,6 +15,9 @@ Portfolio Design Preferences:
 - Remove "Demo" mentions in projects (use "View Code" and "Live Project")
 - Remove computer-related stock images in favor of professional photos
 - Target job applications for Python developer positions
+- Remove contact form (no "Send Message" functionality needed)
+- Use personal photos from local folders instead of stock images
+- Organize project screenshots in dedicated folders
 
 ## System Architecture
 

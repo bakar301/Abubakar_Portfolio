@@ -5,8 +5,9 @@ export function ProjectsSection() {
     {
       title: "ObjectIQ",
       description: "AI-powered food recognition mobile app using Flutter frontend and FastAPI backend. Identifies food items and provides nutritional information, calorie estimates, and personalized recipe suggestions.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      imageAlt: "AI neural network visualization representing ObjectIQ technology",
+      image: "/projects/objectiq.jpg",
+      fallbackImage: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      imageAlt: "ObjectIQ - AI food recognition app screenshot",
       technologies: ["Python", "FastAPI", "Flutter", "AI/ML"],
       featured: true,
       githubUrl: "https://github.com/abubakarazeem/objectiq",
@@ -15,8 +16,9 @@ export function ProjectsSection() {
     {
       title: "Pomodoro Timer",
       description: "Cross-platform productivity timer application built with React Native and Flutter. Features clean UI/UX design and efficient time management functionality.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      imageAlt: "Mobile app development interface showing productivity timer",
+      image: "/projects/pomodoro-timer.jpg",
+      fallbackImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      imageAlt: "Pomodoro Timer app interface screenshot",
       technologies: ["React Native", "Flutter", "UI/UX"],
       featured: false,
       githubUrl: "https://github.com/abubakarazeem/pomodoro-timer",
@@ -25,8 +27,9 @@ export function ProjectsSection() {
     {
       title: "Number Guessing Game",
       description: "Console-based game developed as a Programming Fundamentals project. Demonstrates core programming concepts, logic building, and C++ syntax mastery.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      imageAlt: "C++ programming code showing game development logic",
+      image: "/projects/number-guessing-game.jpg",
+      fallbackImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      imageAlt: "Number Guessing Game C++ code screenshot",
       technologies: ["C++", "Console App", "Game Logic"],
       featured: false,
       githubUrl: "https://github.com/abubakarazeem/number-guessing-game",
@@ -56,6 +59,10 @@ export function ProjectsSection() {
                 src={project.image}
                 alt={project.imageAlt}
                 className="w-full h-48 object-cover"
+                onError={(e) => {
+                  // Fallback to placeholder if project image not found
+                  e.currentTarget.src = project.fallbackImage;
+                }}
               />
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
