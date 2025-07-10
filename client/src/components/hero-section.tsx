@@ -20,9 +20,13 @@ export function HeroSection() {
           {/* Professional Photo */}
           <div className="mb-8">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+              src="/abu-bakar-photo.jpg"
               alt="Abu Bakar - Professional headshot"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto shadow-xl border-4 border-white dark:border-gray-700 object-cover"
+              onError={(e) => {
+                // Fallback to placeholder if personal photo not found
+                e.currentTarget.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400";
+              }}
             />
           </div>
           
