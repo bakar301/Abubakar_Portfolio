@@ -5,7 +5,7 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 
 export default defineConfig({
-  base: '/abubakar-portfolio/',
+  base: '/Abubakar_Portfolio/',
   plugins: [
     react(),
     runtimeErrorOverlay(),
