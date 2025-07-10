@@ -1,0 +1,45 @@
+# Git Setup Commands for Abu Bakar Portfolio
+
+## Step 1: Create .gitignore file
+Create a .gitignore file in your project folder with this content:
+
+node_modules/
+.env
+.env.local
+.env.production
+.cache/
+.local/
+.upm/
+dist/
+build/
+*.log
+.DS_Store
+Thumbs.db
+
+## Step 2: Initialize Git and push to GitHub
+Open terminal/command prompt in your project folder and run:
+
+git init
+git add .
+git commit -m "Initial commit: Abu Bakar Portfolio Website"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/abu-bakar-portfolio.git
+git push -u origin main
+
+Replace YOUR_USERNAME with your actual GitHub username.
+
+## Step 3: Future updates
+When you make changes, use:
+
+git add .
+git commit -m "Updated portfolio"
+git push
+
+## Step 4: Running on your PC
+After downloading/cloning:
+
+1. Install Node.js from nodejs.org
+2. Open terminal in project folder
+3. Run: npm install
+4. Run: npm run dev
+5. Open browser to: http://localhost:5000
