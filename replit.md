@@ -8,6 +8,14 @@ This is a full-stack portfolio application built for Abu Bakar, a Python develop
 
 Preferred communication style: Simple, everyday language.
 
+Portfolio Design Preferences:
+- Focus on Python development expertise (no computer vision/ML developer mentions)
+- Remove services section (portfolio is for job applications, not services)
+- Keep professional hero section with personal photo
+- Remove "Demo" mentions in projects (use "View Code" and "Live Project")
+- Remove computer-related stock images in favor of professional photos
+- Target job applications for Python developer positions
+
 ## System Architecture
 
 ### Frontend Architecture

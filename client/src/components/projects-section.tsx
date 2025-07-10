@@ -95,7 +95,7 @@ export function ProjectsSection() {
                     className="text-primary hover:text-secondary transition-colors duration-200 flex items-center gap-1"
                   >
                     <Github size={16} />
-                    Code
+                    View Code
                   </a>
                   {project.liveUrl && (
                     <a
@@ -105,7 +105,7 @@ export function ProjectsSection() {
                       className="text-primary hover:text-secondary transition-colors duration-200 flex items-center gap-1"
                     >
                       <ExternalLink size={16} />
-                      Live Demo
+                      Live Project
                     </a>
                   )}
                 </div>

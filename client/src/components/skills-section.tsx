@@ -76,11 +76,11 @@ export function SkillsSection() {
             </div>
           </div>
 
-          {/* Technologies & Bolt */}
+          {/* Technologies & Tools */}
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-center mb-4">
               <Bolt className="text-2xl text-green-500 mr-3" size={24} />
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Technologies & Bolt</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Technologies & Tools</h3>
             </div>
             <div className="grid grid-cols-2 gap-3">
               {technologies.map((tech, index) => (
