@@ -1,0 +1,44 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#1a1a1a"/>
+  
+  <!-- Terminal Window -->
+  <rect x="50" y="50" width="700" height="300" rx="10" fill="#2d2d2d" stroke="#555" stroke-width="2"/>
+  
+  <!-- Title Bar -->
+  <rect x="50" y="50" width="700" height="30" rx="10" fill="#3d3d3d"/>
+  <circle cx="70" cy="65" r="6" fill="#ff5f56"/>
+  <circle cx="90" cy="65" r="6" fill="#ffbd2e"/>
+  <circle cx="110" cy="65" r="6" fill="#27ca3f"/>
+  <text x="130" y="72" fill="#fff" font-family="monospace" font-size="12">Number Guessing Game - C++</text>
+  
+  <!-- Terminal Content -->
+  <text x="70" y="110" fill="#00ff00" font-family="Courier New" font-size="14">$ ./number_guessing_game</text>
+  <text x="70" y="135" fill="#fff" font-family="Courier New" font-size="12">==================================</text>
+  <text x="70" y="155" fill="#00bfff" font-family="Courier New" font-size="12">   Welcome to Number Guessing Game!</text>
+  <text x="70" y="175" fill="#fff" font-family="Courier New" font-size="12">==================================</text>
+  <text x="70" y="200" fill="#fff" font-family="Courier New" font-size="12">I'm thinking of a number between 1-100</text>
+  <text x="70" y="220" fill="#fff" font-family="Courier New" font-size="12">Can you guess it?</text>
+  <text x="70" y="245" fill="#fff" font-family="Courier New" font-size="12">Enter your guess: 50</text>
+  <text x="70" y="265" fill="#ffff00" font-family="Courier New" font-size="12">Too high! Try again.</text>
+  <text x="70" y="285" fill="#fff" font-family="Courier New" font-size="12">Enter your guess: 25</text>
+  <text x="70" y="305" fill="#ffff00" font-family="Courier New" font-size="12">Too low! Try again.</text>
+  <text x="70" y="325" fill="#fff" font-family="Courier New" font-size="12">Enter your guess: _</text>
+  
+  <!-- Code snippet on the right -->
+  <rect x="420" y="100" width="310" height="230" fill="#1e1e1e" stroke="#444" stroke-width="1" rx="5"/>
+  <text x="430" y="120" fill="#569cd6" font-family="Courier New" font-size="10">#include &lt;iostream&gt;</text>
+  <text x="430" y="135" fill="#569cd6" font-family="Courier New" font-size="10">#include &lt;random&gt;</text>
+  <text x="430" y="155" fill="#dcdcaa" font-family="Courier New" font-size="10">int main() {</text>
+  <text x="440" y="170" fill="#9cdcfe" font-family="Courier New" font-size="10">int secret = rand() % 100 + 1;</text>
+  <text x="440" y="185" fill="#9cdcfe" font-family="Courier New" font-size="10">int guess, attempts = 0;</text>
+  <text x="440" y="205" fill="#c586c0" font-family="Courier New" font-size="10">while (guess != secret) {</text>
+  <text x="450" y="220" fill="#ce9178" font-family="Courier New" font-size="10">cout &lt;&lt; "Enter guess: ";</text>
+  <text x="450" y="235" fill="#9cdcfe" font-family="Courier New" font-size="10">cin &gt;&gt; guess;</text>
+  <text x="450" y="250" fill="#9cdcfe" font-family="Courier New" font-size="10">attempts++;</text>
+  <text x="450" y="270" fill="#c586c0" font-family="Courier New" font-size="10">if (guess &gt; secret)</text>
+  <text x="460" y="285" fill="#ce9178" font-family="Courier New" font-size="10">cout &lt;&lt; "Too high!";</text>
+  <text x="450" y="300" fill="#c586c0" font-family="Courier New" font-size="10">else if (guess &lt; secret)</text>
+  <text x="460" y="315" fill="#ce9178" font-family="Courier New" font-size="10">cout &lt;&lt; "Too low!";</text>
+  <text x="440" y="330" fill="#dcdcaa" font-family="Courier New" font-size="10">}</text>
+</svg>

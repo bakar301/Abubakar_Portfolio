@@ -2,8 +2,13 @@ import { Download, Mail, Github, Linkedin } from "lucide-react";
 
 export function HeroSection() {
   const handleDownloadCV = () => {
-    // In a real implementation, this would download the actual CV
-    window.open("/api/download-cv", "_blank");
+    // Direct download of CV file
+    const link = document.createElement('a');
+    link.href = '/api/download-cv';
+    link.download = 'Abu_Bakar_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const scrollToContact = () => {

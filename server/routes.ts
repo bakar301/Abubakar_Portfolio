@@ -4,6 +4,8 @@ import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
 import { z } from "zod";
 import nodemailer from "nodemailer";
+import path from "path";
+import fs from "fs";
 
 // Create nodemailer transporter
 const createTransporter = () => {
@@ -72,11 +74,26 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Download CV endpoint
   app.get("/api/download-cv", (req, res) => {
-    res.json({
-      success: true,
-      message: "CV download functionality would be implemented here",
-      // In a real implementation, this would serve the PDF file
-    });
+    // Path to CV file in public folder
+    const cvPath = path.join(process.cwd(), 'client', 'public', 'Abu_Bakar_CV.pdf');
+    
+    // Check if file exists
+    if (fs.existsSync(cvPath)) {
+      res.download(cvPath, 'Abu_Bakar_CV.pdf', (err) => {
+        if (err) {
+          console.error('CV download error:', err);
+          res.status(500).json({ 
+            success: false, 
+            message: "Error downloading CV" 
+          });
+        }
+      });
+    } else {
+      res.status(404).json({ 
+        success: false, 
+        message: "CV file not found" 
+      });
+    }
   });
 
   const httpServer = createServer(app);

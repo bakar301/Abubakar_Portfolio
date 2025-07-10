@@ -27,9 +27,9 @@ export function ProjectsSection() {
     {
       title: "Number Guessing Game",
       description: "Console-based game developed as a Programming Fundamentals project. Demonstrates core programming concepts, logic building, and C++ syntax mastery.",
-      image: "/projects/number-guessing-game.jpg",
+      image: "/projects/number-guessing-game.svg",
       fallbackImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      imageAlt: "Number Guessing Game C++ code screenshot",
+      imageAlt: "Number Guessing Game C++ terminal interface and code",
       technologies: ["C++", "Console App", "Game Logic"],
       featured: false,
       githubUrl: "https://github.com/abubakarazeem/number-guessing-game",
